@@ -1,0 +1,14 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+task exportJar (type: Copy) {
+    doLast {
+        from('build/intermediate/bundles/debug')
+        into('release/')
+        include('classes.jar')
+        rename('classes.jar', 'ComMgr.jar')
+    }
+}

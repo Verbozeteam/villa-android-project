@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/hasan/OneDrive/Office_Controller_3/Android/homecontrol/SeekArc_library/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/hasan/OneDrive/Office_Controller_3/Android/homecontrol/SeekArc_library/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/hasan/OneDrive/Office_Controller_3/Android/homecontrol/SeekArc_library/build/intermediates/res/merged/release/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/hasan/OneDrive/Office_Controller_3/Android/homecontrol/SeekArc_library/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]
