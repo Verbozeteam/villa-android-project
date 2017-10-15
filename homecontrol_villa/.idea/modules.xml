@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SeekArc_library/SeekArc_library.iml" filepath="$PROJECT_DIR$/SeekArc_library/SeekArc_library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/communicationmanager/communicationmanager.iml" filepath="$PROJECT_DIR$/communicationmanager/communicationmanager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/homecontrol_villa.iml" filepath="$PROJECT_DIR$/homecontrol_villa.iml" />
+    </modules>
+  </component>
+</project>
