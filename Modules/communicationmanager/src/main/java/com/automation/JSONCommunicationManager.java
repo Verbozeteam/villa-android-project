@@ -161,7 +161,7 @@ public class JSONCommunicationManager implements Runnable {
             lock.unlock();
 
             long curTime = System.currentTimeMillis();
-            if (IP != target_IP) {
+            if (!IP.equals(target_IP)) {
                 try {
                     if (socket != null)
                         socket.close();

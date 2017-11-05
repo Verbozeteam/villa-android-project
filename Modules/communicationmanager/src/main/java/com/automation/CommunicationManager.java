@@ -80,8 +80,10 @@ public class CommunicationManager implements Runnable {
                 } catch (Exception e) {
                     e.printStackTrace();
                 } finally {
-                    if (s != null && s.isConnected())
-                        s.close();
+                    try {
+                        if (s != null && s.isConnected())
+                            s.close();
+                    } catch (Exception e) {}
                 }
             }
         };
@@ -139,7 +141,7 @@ public class CommunicationManager implements Runnable {
             lock.unlock();
 
             long curTime = System.currentTimeMillis();
-            if (IP != target_IP) {
+            if (!IP.equals(target_IP)) {
                 isKicthen = false;
                 if (target_IP.charAt(0) == 'k') {
                     isKicthen = true;
@@ -158,6 +160,9 @@ public class CommunicationManager implements Runnable {
             }
 
             if (!connected) {
+                if (IP.length() == 0)
+                    continue;
+
                 try {
                     InetAddress addr = InetAddress.getByName(IP);
                     if (isKicthen)

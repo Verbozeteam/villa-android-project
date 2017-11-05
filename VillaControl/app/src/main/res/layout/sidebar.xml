@@ -12,13 +12,10 @@
         android:layout_height="200dp"
         android:src="@drawable/iconhome"/>
 
-    <ListView
+    <com.verboze.villacontrol.NotStupidListView
         android:id="@+id/room_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:choiceMode="singleChoice"
-        android:textColor="#000000"
-        android:listSelector="#414141" />
+        android:layout_height="wrap_content"/>
 
     <View
         android:layout_margin="20dp"
@@ -26,11 +23,9 @@
         android:layout_height="1dp"
         android:background="#ffffff" />
 
-    <ListView
+    <com.verboze.villacontrol.NotStupidListView
         android:id="@+id/extra_list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:choiceMode="singleChoice"
-        android:listSelector="#414141" />
+        android:layout_height="wrap_content" />
 
 </LinearLayout>
