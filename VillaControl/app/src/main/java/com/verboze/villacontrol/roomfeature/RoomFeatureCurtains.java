@@ -59,21 +59,23 @@ public class RoomFeatureCurtains extends RoomFeature {
     @Override
     public void reInit(String cur_lang) {
         if (buttons == null) {
-            buttons = new ImageView[6];
+            buttons = new ImageView[8];
         }
         if (icons == null) {
-            icons = new ImageView[3];
+            icons = new ImageView[4];
         }
         if (view == null) {
             LayoutInflater inflater = LayoutInflater.from(activity);
             view = inflater.inflate(R.layout.curtains, null);
             int[] ids = {R.id.curtainup1, R.id.curtaindown1,
                     R.id.curtainup2, R.id.curtaindown2,
-                    R.id.curtainup3, R.id.curtaindown3};
+                    R.id.curtainup3, R.id.curtaindown3,
+                    R.id.curtainup4, R.id.curtaindown4};
             icons[0] = (ImageView) view.findViewById(R.id.curtain_icon1);
             icons[1] = (ImageView) view.findViewById(R.id.curtain_icon2);
             icons[2] = (ImageView) view.findViewById(R.id.curtain_icon3);
-            for (int i = 0; i < 6; i++) {
+            icons[3] = (ImageView) view.findViewById(R.id.curtain_icon4);
+            for (int i = 0; i < 8; i++) {
                 buttons[i] = (ImageView) view.findViewById(ids[i]);
                 buttons[i].setOnTouchListener(listener);
             }
@@ -86,9 +88,9 @@ public class RoomFeatureCurtains extends RoomFeature {
         if (cur_device.data.length() == 4) {
             num_curtains = Character.getNumericValue(cur_device.data.charAt(3));
         }
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < 8; i++)
             buttons[i].setVisibility(i < num_curtains * 2 ? View.VISIBLE : View.INVISIBLE);
-        for (int i = 0; i < 3; i++)
+        for (int i = 0; i < 4; i++)
             icons[i].setVisibility(i < num_curtains ? View.VISIBLE : View.INVISIBLE);
         main_tab.addView(view);
     }

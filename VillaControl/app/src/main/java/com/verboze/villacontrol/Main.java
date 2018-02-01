@@ -372,8 +372,8 @@ public class Main
         rooms.put("Curtains", new RoomFeatureCurtains(this));
         room_listview.addItem(getString(R.string.curtains));
 
-        rooms.put("AC", new RoomFeatureAC(this));
-        room_listview.addItem(getString(R.string.acs));
+//        rooms.put("AC", new RoomFeatureAC(this));
+//        room_listview.addItem(getString(R.string.acs));
 
 //        rooms.put("Room Service", new RoomFeatureRoomService(this));
 //        room_adapter.add(getString(R.string.room));

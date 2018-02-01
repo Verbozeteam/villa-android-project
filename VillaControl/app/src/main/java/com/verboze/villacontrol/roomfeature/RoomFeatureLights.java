@@ -160,7 +160,7 @@ public class RoomFeatureLights extends RoomFeature {
         switch_ids = new int[] {R.id.light1, R.id.light2, R.id.light3, R.id.light4};
         dimmer_ids = new int[] {R.id.dimmer1, R.id.dimmer2};
         dimmer_icon_ids = new int[] {R.id.dimmer_icon1, R.id.dimmer_icon2};
-        ltr_texts = new int[] {R.id.textView3, R.id.textView4};
+        ltr_texts = new int[] {R.id.textView3};
         base_resource = R.layout.lights;
     }
 
